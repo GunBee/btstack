@@ -332,6 +332,7 @@ static const btstack_run_loop_t btstack_run_loop_qt = {
     &btstack_run_loop_qt_execute,
     &btstack_run_loop_qt_dump_timer,
     &btstack_run_loop_qt_get_time_ms,
+    NULL, /* poll data sources from irq */
 };
 
 /**

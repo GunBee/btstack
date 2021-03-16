@@ -173,6 +173,7 @@ static const btstack_run_loop_t btstack_run_loop_windows = {
     &btstack_run_loop_windows_execute,
     &btstack_run_loop_base_dump_timer,
     &btstack_run_loop_windows_get_time_ms,
+    NULL, /* poll data sources from irq */
 };
 
 /**

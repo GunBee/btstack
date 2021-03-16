@@ -255,6 +255,7 @@ static const btstack_run_loop_t btstack_run_loop_posix = {
     &btstack_run_loop_posix_execute,
     &btstack_run_loop_base_dump_timer,
     &btstack_run_loop_posix_get_time_ms,
+    NULL, /* poll data sources from irq */
 };
 
 /**

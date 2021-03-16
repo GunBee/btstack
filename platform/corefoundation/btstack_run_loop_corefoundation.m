@@ -249,5 +249,6 @@ static const btstack_run_loop_t btstack_run_loop_corefoundation = {
     &btstack_run_loop_corefoundation_execute,
     &btstack_run_loop_corefoundation_dump_timer,
     &btstack_run_loop_corefoundation_get_time_ms,
+    NULL, /* poll data sources from irq */
 };
 
